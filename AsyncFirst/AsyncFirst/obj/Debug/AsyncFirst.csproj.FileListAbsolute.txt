@@ -1,0 +1,9 @@
+F:\vs\projects\消息队列\AsyncFirst\AsyncFirst\bin\Debug\AsyncFirst.exe.config
+F:\vs\projects\消息队列\AsyncFirst\AsyncFirst\bin\Debug\AsyncFirst.exe
+F:\vs\projects\消息队列\AsyncFirst\AsyncFirst\bin\Debug\AsyncFirst.pdb
+F:\vs\projects\消息队列\AsyncFirst\AsyncFirst\obj\Debug\AsyncFirst.csprojResolveAssemblyReference.cache
+F:\vs\projects\消息队列\AsyncFirst\AsyncFirst\obj\Debug\AsyncFirst.Form1.resources
+F:\vs\projects\消息队列\AsyncFirst\AsyncFirst\obj\Debug\AsyncFirst.Properties.Resources.resources
+F:\vs\projects\消息队列\AsyncFirst\AsyncFirst\obj\Debug\AsyncFirst.csproj.GenerateResource.Cache
+F:\vs\projects\消息队列\AsyncFirst\AsyncFirst\obj\Debug\AsyncFirst.exe
+F:\vs\projects\消息队列\AsyncFirst\AsyncFirst\obj\Debug\AsyncFirst.pdb
