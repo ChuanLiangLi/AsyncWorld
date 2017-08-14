@@ -60,5 +60,20 @@ namespace AsyncFirst
             }),null);
             Debug.WriteLine("【Debug】主线程ID:"+Thread.CurrentThread.ManagedThreadId);
         }
+
+        private void btnEAP_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("【Debug】主线程ID:"+Thread.CurrentThread.ManagedThreadId);
+            BackgroundWorker worker = new BackgroundWorker();
+            worker.DoWork += new DoWorkEventHandler((s1,s2)=>
+            {
+                Thread.Sleep(200);
+                Debug.WriteLine("【Debug】异步线程ID:"+Thread.CurrentThread.ManagedThreadId);
+
+            });//注册事件来实现异步
+            
+            worker.RunWorkerAsync(this);
+            Debug.WriteLine("【Debug】主线程ID:"+Thread.CurrentThread.ManagedThreadId);
+        }
     }
 }
