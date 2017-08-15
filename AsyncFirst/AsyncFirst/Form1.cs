@@ -75,5 +75,48 @@ namespace AsyncFirst
             worker.RunWorkerAsync(this);
             Debug.WriteLine("【Debug】主线程ID:"+Thread.CurrentThread.ManagedThreadId);
         }
+
+        private void btnTAP_Click(object sender, EventArgs e)
+        {
+            var task1 = Task<string>.Run(() =>
+            {
+                Thread.Sleep(2000);
+                Debug.WriteLine("【Debug】task1线程Id:" + Thread.CurrentThread.ManagedThreadId);
+                return "张三";
+            });
+            task1.Wait();
+            var value = task1.Result;
+            Debug.WriteLine("【Debug】主线程ID:"+Thread.CurrentThread.ManagedThreadId);
+            Debug.WriteLine("value:"+value);
+        }
+
+        private void btnMoreAsyncSort_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("【Debug】主线程ID:"+Thread.CurrentThread.ManagedThreadId);
+            string str1 = string.Empty, str2 = string.Empty, str3 = string.Empty;
+            var task1 = Task.Run(()=>
+            {
+                Thread.Sleep(500);
+                str1 = "姓名：张三，";
+                Debug.WriteLine("【Debug】task1 线程ID:"+Thread.CurrentThread.ManagedThreadId);
+
+            }).ContinueWith(t=>
+            {
+                Thread.Sleep(500);
+                str2 = "年龄：25，";
+                Debug.WriteLine("【Debug】task2 线程ID:"+Thread.CurrentThread.ManagedThreadId);
+
+            }).ContinueWith(t=>
+            {
+                Thread.Sleep(500);
+                str3 = "爱好，妹子";
+                Debug.WriteLine("【Debug】task3 线程ID:"+Thread.CurrentThread.ManagedThreadId);
+            });
+            Thread.Sleep(2000);
+            task1.Wait();
+            Debug.WriteLine(str1+str2+str3);
+            Debug.WriteLine("【Debug】主线程ID:" + Thread.CurrentThread.ManagedThreadId);
+
+        }
     }
 }

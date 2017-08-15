@@ -1,0 +1,8 @@
+F:\vs\projects\AsyncWorld\AsyncFirst\DeleteTest\bin\Debug\DeleteTest.exe.config
+F:\vs\projects\AsyncWorld\AsyncFirst\DeleteTest\bin\Debug\DeleteTest.exe
+F:\vs\projects\AsyncWorld\AsyncFirst\DeleteTest\bin\Debug\DeleteTest.pdb
+F:\vs\projects\AsyncWorld\AsyncFirst\DeleteTest\obj\Debug\DeleteTest.Form1.resources
+F:\vs\projects\AsyncWorld\AsyncFirst\DeleteTest\obj\Debug\DeleteTest.Properties.Resources.resources
+F:\vs\projects\AsyncWorld\AsyncFirst\DeleteTest\obj\Debug\DeleteTest.csproj.GenerateResource.Cache
+F:\vs\projects\AsyncWorld\AsyncFirst\DeleteTest\obj\Debug\DeleteTest.exe
+F:\vs\projects\AsyncWorld\AsyncFirst\DeleteTest\obj\Debug\DeleteTest.pdb
